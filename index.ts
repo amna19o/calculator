@@ -2,9 +2,9 @@
 
 import inquirer from "inquirer"
  
-const answer = await inquirer.prompt([{message: "Enter the first number", type: "number", name:"firstNumber"},
-{message: "Enter the second number", type: "number", name: "secondNumber"},
-{message:"Choose the operator to perform operation",
+const answer = await inquirer.prompt([{message: "Enter your first number", type: "number", name:"firstNumber"},
+{message: "Enter your second number", type: "number", name: "secondNumber"},
+{message:"Choose a operator to perform operation",
 type:"list",
 name:"operator",
 choices: ["Addition","Subtraction", "Multiplication", "Division"],
@@ -27,3 +27,4 @@ else if (answer.operator==="Division"){
 }
 else {console.log("plz select a valid operator")};
 
+console.log("The End!");
